@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-uvot
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0030-tenant/tkrw-pr712-0075-0030-app/devfile-sample-uvot@sha256:c6dc12e016f0532dbe4ea3c73d12d674d801154c0a596b08c5825c25e586eff3
+        name: my-nodejs
+        resources: {}
+status: {}
